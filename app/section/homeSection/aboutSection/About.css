@@ -1,11 +1,17 @@
 /* ================= ABOUT SECTION ================= */
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .about-section {
     width: 100%;
     min-height: 100vh;
     background-color: #000000;
     color: #ffffff;
-    padding: 120px 24px 80px 24px;
+    padding: 24px 24px 80px 24px;
 }
 
 .about-container {
@@ -282,34 +288,5 @@
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-/* Responsive */
-@media (max-width: 968px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .about-image-wrapper {
-        margin-bottom: 20px;
-    }
-
-    .about-tabs {
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .skills-circle-grid {
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .skills-circle-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
 }

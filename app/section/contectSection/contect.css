@@ -150,28 +150,89 @@
 
 /* ================= RESPONSIVE ================= */
 
-@media (max-width: 968px) {
+@media (max-width: 1024px) {
     .contact-container {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 40px;
+    }
+
+    /* Contact section ka sara text aur headers center karne ke liye */
+    .contact-page {
+        text-align: center;
+    }
+
+    .contact-header {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .contact-title {
         font-size: 34px;
+        text-align: center;
+    }
+
+    .contact-subtitle {
+        text-align: center;
+    }
+
+    /* 👉 Paragraphs aur text ko center karne ke liye */
+    .contact-page p,
+    .contact-info p,
+    .contact-details p,
+    .contact-description {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-info,
+    .contact-details {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 @media (max-width: 640px) {
+    .contact-page {
+        padding: 90px 16px 50px 16px;
+        text-align: center;
+    }
+
+    .contact-container {
+        gap: 30px;
+    }
+
     .form-row {
         grid-template-columns: 1fr;
     }
 
-    .contact-page {
-        padding: 100px 20px 60px 20px;
+    /* Mobile par bhi paragraphs center mein rahenge */
+    .contact-page p,
+    .contact-info p,
+    .contact-details p,
+    .contact-description {
+        text-align: center;
+    }
+
+    /* Input fields aur textareas ki width mobile par perfect fit karne ke liye */
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+        width: 100%;
+        text-align: left;
+        /* Input ke andar likhne wala text left hi acha lagta hai */
     }
 
     .submit-btn {
         width: 100%;
         justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-title {
+        font-size: 28px;
     }
 }

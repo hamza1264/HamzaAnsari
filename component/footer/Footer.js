@@ -68,7 +68,7 @@ export function Footer() {
 
                     {/* Instagram */}
                     <a
-                        href="https://www.instagram.com/hamzaansari2985?    "
+                        href="https://www.instagram.com/hamzaansari2985?"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="social-icon instagram"

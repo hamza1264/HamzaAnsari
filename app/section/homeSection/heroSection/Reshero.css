@@ -1,0 +1,131 @@
+/* ============================================================
+   1. TABLETS & LAPTOPS UNDER 1280px (Text Upar, Image Neeche)
+   ============================================================ */
+@media screen and (max-width: 1024px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .hero {
+        width: 100%;
+        min-height: auto;
+        padding: 100px 20px 60px 20px;
+        overflow: hidden;
+    }
+
+    .hero-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /* 👉 Text upar aur Image neeche karne ke liye */
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        max-width: 600px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-socials {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero-circle,
+    .hero-placeholder {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+
+/* ============================================================
+   2. SMALL MOBILE DEVICES (0px to 480px)
+   ============================================================ */
+@media screen and (max-width: 480px) {
+    .hero {
+        padding: 80px 15px 40px 15px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        /* 👉 Mobile par bhi Text upar, Image neeche */
+        gap: 30px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        margin-top: 12px;
+        line-height: 1.5;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .hero-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .hero-socials {
+        justify-content: center;
+        gap: 16px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .hero-social-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .hero-circle,
+    .hero-placeholder {
+        width: 240px;
+        height: 240px;
+    }
+}

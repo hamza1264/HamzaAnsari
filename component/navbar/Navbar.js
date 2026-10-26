@@ -22,10 +22,10 @@ export default function Navbar() {
                     <Link href="/" className="navbar-link">
                         Home
                     </Link>
-                    <Link href="portfolio" className="navbar-link">
+                    <Link href="/portfolio" className="navbar-link">
                         Portfolio
                     </Link>
-                    <Link href="contact" className="navbar-link">
+                    <Link href="/contact" className="navbar-link">
                         Contact
                     </Link>
                 </div>
@@ -35,7 +35,7 @@ export default function Navbar() {
                     Contact
                 </a>
 
-                {/* Mobile Button */}
+                {/* Mobile Hamburger Button */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     className="mobile-menu-button"
@@ -65,7 +65,7 @@ export default function Navbar() {
                     </Link>
 
                     <Link
-                        href="/contect"
+                        href="/contact"
                         onClick={() => setIsOpen(false)}
                         className="mobile-link"
                     >

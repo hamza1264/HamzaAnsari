@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import "./About.css";
+import "./Resabout.css";
 
 export default function AboutPage() {
   const [activeTab, setActiveTab] = useState("introduction");
