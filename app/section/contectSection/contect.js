@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import "./Contect.css";
+import "./contect.css";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
