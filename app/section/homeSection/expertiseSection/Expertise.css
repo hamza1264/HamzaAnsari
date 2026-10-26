@@ -1,0 +1,137 @@
+/* ================= EXPERTISE SECTION ================= */
+
+.expertise-section {
+    width: 100%;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    padding: 100px 24px;
+}
+
+.expertise-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ================= HEADER ================= */
+
+.expertise-header {
+    margin-bottom: 60px;
+}
+
+.expertise-subtitle {
+    color: #3b82f6;
+    /* Red/Pink Accent Color */
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.expertise-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* ================= GRID ================= */
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+/* ================= CARD WRAPPER (Red Border Effect) ================= */
+
+.expertise-card-wrapper {
+    position: relative;
+    border-radius: 12px;
+
+    /* Background gradient to create the exact red/pink offset frame */
+    background: linear-gradient(135deg, #3478e4 0%, #3b82f6 100%);
+    padding: 2px;
+    /* Border thickness */
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Inner Card Container */
+.expertise-card {
+    background: #18181b;
+    /* Dark Gray Card Background */
+    border-radius: 10px;
+    padding: 50px 32px 40px 32px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* ================= ICON ================= */
+
+.card-icon {
+    position: absolute;
+    top: -22px;
+    background: #18181b;
+    color: #3b82f6;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* ================= TEXT ================= */
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+
+.card-description {
+    font-size: 14.5px;
+    color: #a1a1aa;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ================= HOVER ANIMATION ================= */
+
+.expertise-card-wrapper:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(59, 130, 246, 0.25);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+    .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .expertise-title {
+        font-size: 32px;
+    }
+
+    .expertise-section {
+        padding: 60px 20px;
+    }
+}

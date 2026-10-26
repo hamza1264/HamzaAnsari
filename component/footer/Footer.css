@@ -1,0 +1,172 @@
+/* ================= FOOTER ================= */
+
+.footer {
+    width: 100%;
+    background: #000000;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #d1d5db;
+    padding: 60px 0 30px 0;
+}
+
+/* ================= CONTAINER ================= */
+
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ================= TOP SECTION ================= */
+
+.footer-top {
+    margin-bottom: 24px;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.footer-logo span {
+    color: #3b82f6;
+}
+
+.footer-bio {
+    max-width: 500px;
+    font-size: 15px;
+    color: #9ca3af;
+    line-height: 1.5;
+}
+
+/* ================= LINKS ================= */
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 24px;
+}
+
+.footer-link {
+    color: #d1d5db;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #3b82f6;
+}
+
+/* ================= SOCIAL ICONS ================= */
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon svg {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+}
+
+/* Exact Brand Colors matching image */
+.social-icon.facebook {
+    color: #1877f2;
+    /* Blue */
+}
+
+.social-icon.instagram {
+    color: #f77737;
+    /* Orange / Pink */
+}
+
+.social-icon.twitter {
+    color: #7856ff;
+    /* Purple / Blue */
+}
+
+.social-icon.linkedin {
+    color: #0a66c2;
+    /* Blue */
+}
+
+.social-icon.whatsapp {
+    color: #25d366;
+    /* Green */
+}
+
+.social-icon.github {
+    color: #9ca3af;
+    /* Gray / White */
+}
+
+/* Hover Effect */
+.social-icon:hover {
+    transform: translateY(-4px) scale(1.15);
+    filter: drop-shadow(0 0 10px currentColor);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .footer-socials {
+        gap: 18px;
+    }
+
+    .social-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* ================= DIVIDER ================= */
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+/* ================= BOTTOM ================= */
+
+.footer-bottom {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0 20px 0;
+    }
+
+    .footer-container {
+        padding: 0 20px;
+    }
+
+    .footer-links {
+        gap: 20px;
+    }
+}

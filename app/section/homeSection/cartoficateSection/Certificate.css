@@ -1,0 +1,154 @@
+/* ================= CERTIFICATES SECTION ================= */
+
+.certificates-section {
+    width: 100%;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    padding: 100px 24px;
+}
+
+.certificates-container {
+    max-width: 900px;
+    /* Narrower container for clean line view */
+    margin: 0 auto;
+}
+
+/* ================= HEADER ================= */
+
+.certificates-header {
+    margin-bottom: 50px;
+}
+
+.certificates-subtitle {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.certificates-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* ================= TIMELINE LINE ================= */
+
+.certificates-timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid rgba(37, 99, 235, 0.3);
+    /* Vertical Blue Line */
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/* Timeline Row Item */
+.timeline-item {
+    position: relative;
+}
+
+/* Line Dot / Node Marker */
+.timeline-dot {
+    position: absolute;
+    left: -39px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #2563eb;
+    border: 3px solid #0d0d0d;
+    box-shadow: 0 0 12px rgba(37, 99, 235, 0.8);
+    transition: all 0.3s ease;
+}
+
+/* Timeline Card Box */
+.timeline-content {
+    background: #18181b;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 24px 28px;
+    transition: all 0.3s ease;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.cert-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.cert-year {
+    font-size: 12px;
+    font-weight: 700;
+    color: #3b82f6;
+    background: rgba(59, 130, 246, 0.1);
+    padding: 4px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.cert-issuer {
+    font-size: 14px;
+    font-weight: 600;
+    color: #a1a1aa;
+    margin: 0 0 12px 0;
+}
+
+.cert-description {
+    font-size: 14px;
+    color: #71717a;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ================= HOVER EFFECT ================= */
+
+.timeline-item:hover .timeline-dot {
+    background: #8b5cf6;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 1);
+    transform: scale(1.2);
+}
+
+.timeline-item:hover .timeline-content {
+    border-color: rgba(59, 130, 246, 0.5);
+    transform: translateX(8px);
+    /* Smooth slight slide to right */
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 640px) {
+    .certificates-timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-dot {
+        left: -29px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .timeline-content {
+        padding: 18px 20px;
+    }
+
+    .certificates-title {
+        font-size: 32px;
+    }
+}
